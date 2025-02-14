@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendBrickCore", "SendBrickCore\SendBrickCore.csproj", "{FEE19A3A-5111-4103-A787-1740F23B8145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendBrickCore", "SendBrickCore\SendBrickCore.csproj", "{FEE19A3A-5111-4103-A787-1740F23B8145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendbrickShared", "SendbrickShared\SendbrickShared.csproj", "{3F9B2EA3-2D24-45ED-944A-ED0E19102720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendBrickCoreTests", "SendBrickCoreTests\SendBrickCoreTests.csproj", "{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FEE19A3A-5111-4103-A787-1740F23B8145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE19A3A-5111-4103-A787-1740F23B8145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE19A3A-5111-4103-A787-1740F23B8145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9B2EA3-2D24-45ED-944A-ED0E19102720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9B2EA3-2D24-45ED-944A-ED0E19102720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9B2EA3-2D24-45ED-944A-ED0E19102720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9B2EA3-2D24-45ED-944A-ED0E19102720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
