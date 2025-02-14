@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.Tools
+namespace CM.SendBrickCore.Tools
 {
-    internal class ConnectionParameters
+    public class ConnectionParameters
     {
     }
 }
