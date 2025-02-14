@@ -1,11 +1,17 @@
-namespace SendBrickCoreTests.Tools
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CM.SendBrick.Tools;
+
+namespace CM.SendBrick.Tools.Tests
 {
-    [TestClass]
+    [TestClass()]
     public class ConnectionFilesTest
     {
-        [TestMethod]
-        public void TestMethod1()
+        [TestMethod()]
+        public void GetConfFileLocationTest()
         {
+            ConfigurationFile config = new();
+
+            Assert.AreEqual("..\\..\\..\\..\\SendBrick2\\Connections.txt",config.GetConfFileLocation());
         }
     }
 }
