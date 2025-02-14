@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.Interfaces.Tools
+namespace CM.SendBrickCore.Interfaces.Tools
 {
-    internal interface IConnectionParameters
+    public interface IConnectionParameters
     {
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.Messages
+namespace CM.SendBrickCore.Messages
 {
-    internal class Logging
+    public class Logging
     {
     }
 }

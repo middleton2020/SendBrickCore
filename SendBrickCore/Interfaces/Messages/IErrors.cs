@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.Interfaces.Messages
+namespace CM.SendBrickCore.Interfaces.Messages
 {
-    internal interface IErrors
+    public interface IErrors
     {
     }
 }
