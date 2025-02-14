@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SendBrickCore.Interfaces.Tools
+﻿namespace CM.SendBrick.Interfaces.Tools
 {
-    internal interface IConfigurationFile
+    public interface IConfigurationFile
     {
+        string GetConfFileLocation();
     }
 }
