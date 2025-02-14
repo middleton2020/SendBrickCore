@@ -105,6 +105,24 @@ namespace CM.SendBrickCore.Core
 
         #region GetControllerObjects
         /// <summary>
+        /// Get the right error handler object.
+        /// </summary>
+        /// <returns>Error handler matching IErrors.</returns>
+        public IErrors GetErrorHandler()
+        {
+            return errorMessages;
+        }
+
+        /// <summary>
+        /// Get the right log handler object.
+        /// </summary>
+        /// <returns>Log handler matching ILogging.</returns>
+        public ILogging GetLogHandler()
+        {
+            return logMessages;
+        }
+
+        /// <summary>
         /// Get the right configuration file handler object.
         /// </summary>
         /// <returns>Configuration file handler matching IConfigurationFile.</returns>
@@ -113,6 +131,14 @@ namespace CM.SendBrickCore.Core
             return configFile;
         }
 
+        /// <summary>
+        /// Get the right connection parameter handler object.
+        /// </summary>
+        /// <returns>Connection parameter handler matching IConnecctionParameters.</returns>
+        public IConnectionParameters GetConnectionParamsController()
+        {
+            return connectionParams;
+        }
         #endregion  // GetControllerObjects
     }
 }
