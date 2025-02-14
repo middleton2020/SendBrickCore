@@ -18,6 +18,13 @@ namespace CM.SendBrickCore.Core
         private IConfigurationFile configFile;
         #endregion
 
+        #region Constructors
+        public SetControlTools(IConfigurationFile inpConfigFile)
+        {
+            configFile = inpConfigFile;
+        }
+        #endregion  // Constructors
+
         #region GetControllerObjects
         /// <summary>
         /// Get the right configuration file handler object.

@@ -14,11 +14,9 @@
     <Folder Include="Enums\" />
     <Folder Include="FunctionModules\Inventory\" />
     <Folder Include="FunctionModules\Orders\" />
-    <Folder Include="Interfaces\Messages\" />
     <Folder Include="Interfaces\FunctionModules\" />
     <Folder Include="Interfaces\Connectors\" />
     <Folder Include="Interfaces\ConnectModules\" />
-    <Folder Include="Messages\" />
   </ItemGroup>
 
 </Project>
