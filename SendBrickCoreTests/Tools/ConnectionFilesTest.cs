@@ -1,7 +1,7 @@
-namespace SendBrickCoreTests
+namespace SendBrickCoreTests.Tools
 {
     [TestClass]
-    public class UnitTest1
+    public class ConnectionFilesTest
     {
         [TestMethod]
         public void TestMethod1()

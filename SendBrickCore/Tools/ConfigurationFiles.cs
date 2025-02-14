@@ -3,7 +3,7 @@
 namespace CM.SendBrick.Tools
 {
     /// <summary>
-    /// Provide the location of the connections file, so that we can over-ride this.
+    /// Provide access to the configuration data, so that we can over-ride this.
     /// </summary>
     public class ConfigurationFile : IConfigurationFile
     {
