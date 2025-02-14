@@ -10,7 +10,6 @@
     <Folder Include="ConnectModules\BrickLink\" />
     <Folder Include="ConnectModules\BrickOwl\" />
     <Folder Include="ConnectModules\RoyalMail\" />
-    <Folder Include="Core\" />
     <Folder Include="Connectors\" />
     <Folder Include="Enums\" />
     <Folder Include="FunctionModules\Inventory\" />
