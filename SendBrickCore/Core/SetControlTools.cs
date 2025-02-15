@@ -47,6 +47,7 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = new Errors();
             logMessages = new Logging();
+            messageData = new MessageData();
         }
         public SetControlTools(IConfigurationFile inpConfigFile,
                                IConnectionParameters inpConnections)
@@ -56,6 +57,7 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = new Errors();
             logMessages = new Logging();
+            messageData = new MessageData();
         }
         public SetControlTools(IConfigurationFile inpConfigFile,
                                IConnectionParameters inpConnections,
@@ -66,6 +68,7 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = inpErrorMessages;
             logMessages = new Logging();
+            messageData = new MessageData();
         }
         public SetControlTools(IConfigurationFile inpConfigFile,
                                IConnectionParameters inpConnections,
@@ -77,6 +80,31 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = inpErrorMessages;
             logMessages = inpLogMessages;
+            messageData = new MessageData();
+        }
+        public SetControlTools(IConfigurationFile inpConfigFile,
+                               IConnectionParameters inpConnections,
+                               IErrors inpErrorMessages,
+                               ILogging inpLogMessages,
+                               IMessageData inpMessageData)
+        {
+            configFile = inpConfigFile;
+            connectionParams = inpConnections;
+
+            errorMessages = inpErrorMessages;
+            logMessages = inpLogMessages;
+            messageData = inpMessageData;
+        }
+        public SetControlTools(IErrors inpErrorMessages,
+                               ILogging inpLogMessages,
+                               IMessageData inpMessageData)
+        {
+            configFile = new ConfigurationFile();
+            connectionParams = new ConnectionParameters(configFile);
+
+            errorMessages = inpErrorMessages;
+            logMessages = inpLogMessages;
+            messageData = inpMessageData;
         }
         public SetControlTools(IErrors inpErrorMessages,
                                ILogging inpLogMessages)
@@ -86,6 +114,27 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = inpErrorMessages;
             logMessages = inpLogMessages;
+            messageData = new MessageData();
+        }
+        public SetControlTools(IErrors inpErrorMessages,
+                               IMessageData inpMessageData)
+        {
+            configFile = new ConfigurationFile();
+            connectionParams = new ConnectionParameters(configFile);
+
+            errorMessages = inpErrorMessages;
+            logMessages = new Logging();
+            messageData = inpMessageData;
+        }
+        public SetControlTools(ILogging inpLogMessages,
+                               IMessageData inpMessageData)
+        {
+            configFile = new ConfigurationFile();
+            connectionParams = new ConnectionParameters(configFile);
+
+            errorMessages = new Errors();
+            logMessages = inpLogMessages;
+            messageData = inpMessageData;
         }
         public SetControlTools(IErrors inpErrorMessages)
         {
@@ -94,6 +143,7 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = inpErrorMessages;
             logMessages = new Logging();
+            messageData = new MessageData();
         }
         public SetControlTools(ILogging inpLogMessages)
         {
@@ -102,6 +152,16 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = new Errors();
             logMessages = inpLogMessages;
+            messageData = new MessageData();
+        }
+        public SetControlTools(IMessageData inpMessageData)
+        {
+            configFile = new ConfigurationFile();
+            connectionParams = new ConnectionParameters(configFile);
+
+            errorMessages = new Errors();
+            logMessages = new Logging();
+            messageData = inpMessageData;
         }
         #endregion  // Constructors
 

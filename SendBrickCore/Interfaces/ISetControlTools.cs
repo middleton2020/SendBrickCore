@@ -13,5 +13,6 @@ namespace CM.SendBrickCore.Interfaces
         IConnectionParameters GetConnectionParamsController();
         IErrors GetErrorHandler();
         ILogging GetLogHandler();
+        IMessageData GetMessageHandler();
     }
 }
