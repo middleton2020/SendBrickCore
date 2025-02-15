@@ -22,6 +22,7 @@ namespace CM.SendBrickCore.Core
         #region VariableDefinitions
         private IErrors errorMessages;
         private ILogging logMessages;
+        private IMessageData messageData;
         private IConfigurationFile configFile;
         private IConnectionParameters connectionParams;
         #endregion
@@ -37,6 +38,7 @@ namespace CM.SendBrickCore.Core
 
             errorMessages = new Errors();
             logMessages = new Logging();
+            messageData = new MessageData();
         }
         public SetControlTools(IConfigurationFile inpConfigFile)
         {
@@ -120,6 +122,15 @@ namespace CM.SendBrickCore.Core
         public ILogging GetLogHandler()
         {
             return logMessages;
+        }
+
+        /// <summary>
+        /// Get the right message handler object.
+        /// </summary>
+        /// <returns>Message handler matching IMessageData.</returns>
+        public IMessageData GetMessageHandler()
+        {
+            return messageData;
         }
 
         /// <summary>

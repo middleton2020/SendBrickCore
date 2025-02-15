@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CM.SendBrick.Tools;
+using CM.SendBrickCore.Tools;
+using CM.SendBrickCore.Messages;
 
 namespace CM.SendBrickCore.Core.Tests
 {
@@ -14,7 +17,19 @@ namespace CM.SendBrickCore.Core.Tests
         [TestMethod()]
         public void SetControlToolsTest()
         {
-            Assert.Fail();
+            SetControlTools controler = new SetControlTools();
+
+            ConfigurationFile configFile= new ConfigurationFile();
+            ConnectionParameters connectParams = new ConnectionParameters(configFile);
+            Errors errors = new Errors();
+            Logging logging = new Logging();
+            MessageData messages = new MessageData();
+
+            Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
+            Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
+            Assert.AreEqual(errors.GetType(),controler.GetErrorHandler().GetType());
+            Assert.AreEqual(logging.GetType(),controler.GetLogHandler().GetType());
+            Assert.AreEqual(messages.GetType(),controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
@@ -55,30 +70,6 @@ namespace CM.SendBrickCore.Core.Tests
 
         [TestMethod()]
         public void SetControlToolsTest7()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetErrorHandlerTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetLogHandlerTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetConfigFileTest1()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetConnectionParamsControllerTest()
         {
             Assert.Fail();
         }
