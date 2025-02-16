@@ -35,7 +35,7 @@ namespace CM.SendBrickCore.Core.Tests
         }
 
         [TestMethod()]
-        public void SetControlToolsTest1()
+        public void SetControlToolsConfigTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -55,7 +55,7 @@ namespace CM.SendBrickCore.Core.Tests
         }
 
         [TestMethod()]
-        public void SetControlToolsTest2()
+        public void SetControlToolsConfigConnectTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -68,14 +68,14 @@ namespace CM.SendBrickCore.Core.Tests
             SetControlTools controler = new SetControlTools(configFile,connectParams);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
-            Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
+            Assert.AreSame(connectParams, controler.GetConnectionParamsController());
             Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
             Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest3()
+        public void SetControlToolsConfigConnectErrorsTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -88,14 +88,14 @@ namespace CM.SendBrickCore.Core.Tests
             SetControlTools controler = new SetControlTools(configFile,connectParams,errors);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
-            Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
+            Assert.AreSame(connectParams, controler.GetConnectionParamsController());
+            Assert.AreSame(errors, controler.GetErrorHandler());
             Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest4()
+        public void SetControlToolsConfigConnectErrorsLoggingTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -108,14 +108,14 @@ namespace CM.SendBrickCore.Core.Tests
             SetControlTools controler = new SetControlTools(configFile,connectParams,errors,logging);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
-            Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
+            Assert.AreSame(connectParams, controler.GetConnectionParamsController());
+            Assert.AreSame(errors, controler.GetErrorHandler());
+            Assert.AreSame(logging, controler.GetLogHandler());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest5()
+        public void SetControlToolsConfigConnectErrorsLoggingMessagesTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -128,14 +128,14 @@ namespace CM.SendBrickCore.Core.Tests
             SetControlTools controler = new SetControlTools(configFile,connectParams,errors,logging,messages);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
-            Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
+            Assert.AreSame(connectParams, controler.GetConnectionParamsController());
+            Assert.AreSame(errors, controler.GetErrorHandler());
+            Assert.AreSame(logging, controler.GetLogHandler());
+            Assert.AreSame(messages, controler.GetMessageHandler());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest6()
+        public void SetControlToolsErrorsLoggingMessagesTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -149,13 +149,13 @@ namespace CM.SendBrickCore.Core.Tests
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
+            Assert.AreSame(errors, controler.GetErrorHandler());
+            Assert.AreSame(logging, controler.GetLogHandler());
+            Assert.AreSame(messages, controler.GetMessageHandler());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest7()
+        public void SetControlToolsErrorsLoggingTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -169,13 +169,13 @@ namespace CM.SendBrickCore.Core.Tests
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
+            Assert.AreSame(errors, controler.GetErrorHandler());
+            Assert.AreSame(logging, controler.GetLogHandler());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest8()
+        public void SetControlToolsErrorsMessagesTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -189,13 +189,13 @@ namespace CM.SendBrickCore.Core.Tests
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
+            Assert.AreSame(errors, controler.GetErrorHandler());
             Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
+            Assert.AreSame(messages, controler.GetMessageHandler());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest9()
+        public void SetControlToolsLoggingMessagesTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -210,12 +210,12 @@ namespace CM.SendBrickCore.Core.Tests
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
             Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
+            Assert.AreSame(logging, controler.GetLogHandler());
+            Assert.AreSame(messages, controler.GetMessageHandler());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest10()
+        public void SetControlToolsErrorsTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -229,13 +229,13 @@ namespace CM.SendBrickCore.Core.Tests
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
+            Assert.AreSame(errors, controler.GetErrorHandler());
             Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest11()
+        public void SetControlToolsLoggingTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -250,12 +250,12 @@ namespace CM.SendBrickCore.Core.Tests
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
             Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
+            Assert.AreSame(logging, controler.GetLogHandler());
             Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
-        public void SetControlToolsTest12()
+        public void SetControlToolsMassagesTest()
         {
             // Create comparison objects.
             ConfigurationFile configFile = new ConfigurationFile();
@@ -271,7 +271,7 @@ namespace CM.SendBrickCore.Core.Tests
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
             Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
             Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
+            Assert.AreSame(messages, controler.GetMessageHandler());
         }
     }
 }
