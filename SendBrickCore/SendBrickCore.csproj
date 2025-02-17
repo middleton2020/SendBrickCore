@@ -17,4 +17,9 @@
     <Folder Include="Interfaces\ConnectModules\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\JsonTools\JsonTools\JsonTools.csproj" />
+    <ProjectReference Include="..\SendbrickShared\SendbrickShared.csproj" />
+  </ItemGroup>
+
 </Project>
