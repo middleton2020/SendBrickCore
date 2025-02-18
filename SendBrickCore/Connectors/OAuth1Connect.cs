@@ -1,6 +1,7 @@
 ﻿using CM.SendBrickCore.Interfaces;
 using CM.SendBrickCore.Interfaces.Connectors;
 using CM.SendBrickCore.Interfaces.Tools;
+using CM.SendbrickShared.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace CM.SendBrickCore.Connectors
     /// <summary>
     /// Connect to systems using oAuth1 protocols.
     /// </summary>
-    public class OAuth1Connect : IAPIConnect
+    public class OAuth1Connect : IApiConnect
     {
         #region Variables
         // Validate that these only contain hexidecimal values.
@@ -24,6 +25,11 @@ namespace CM.SendBrickCore.Connectors
         #endregion;
 
         #region Constructors
+        public OAuth1Connect(IConnectionParameters inpConnectParams)
+        {
+            SetConnectionParameters(inpConnectParams);
+        }
+
         /// <summary>
         /// Setup the connection parameters.
         /// </summary>

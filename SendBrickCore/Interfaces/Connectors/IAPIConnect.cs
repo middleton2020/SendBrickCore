@@ -3,7 +3,7 @@
     /// <summary>
     /// Connect to syste APIs using various protocols.
     /// </summary>
-    public interface IAPIConnect
+    public interface IApiConnect
     {
         string RunReadCommandOnAPI(string actionrequest);
         string RunReadCommandOnAPI(string actionrequest, string parameters);
