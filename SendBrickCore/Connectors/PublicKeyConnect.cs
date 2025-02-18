@@ -23,12 +23,12 @@ namespace CM.SendBrickCore.Connectors
         }
         #endregion  // Constructors
 
-        string IApiConnect.RunReadCommandOnAPI(string actionrequest)
+        string IApiConnect.RunReadCommandOnAPI(string inpActionRequest)
         {
             throw new NotImplementedException();
         }
 
-        string IApiConnect.RunReadCommandOnAPI(string actionrequest, string parameters)
+        string IApiConnect.RunReadCommandOnAPI(string inpActionRequest, string inpParameters)
         {
             throw new NotImplementedException();
         }

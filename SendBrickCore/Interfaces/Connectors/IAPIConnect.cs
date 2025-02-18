@@ -5,8 +5,8 @@
     /// </summary>
     public interface IApiConnect
     {
-        string RunReadCommandOnAPI(string actionrequest);
-        string RunReadCommandOnAPI(string actionrequest, string parameters);
+        string RunReadCommandOnAPI(string inpActionRequest);
+        string RunReadCommandOnAPI(string inpActionRequest, string inpParameters);
         string RunUpdateCommandOnAPI(string inpActionRequest);
         string RunUpdateCommandOnAPI(string inpActionRequest, string inpParameters);
     }
