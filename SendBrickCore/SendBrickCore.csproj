@@ -11,7 +11,6 @@
     <Folder Include="ConnectModules\BrickOwl\" />
     <Folder Include="ConnectModules\RoyalMail\" />
     <Folder Include="Enums\" />
-    <Folder Include="FunctionModules\Inventory\" />
     <Folder Include="FunctionModules\Orders\" />
     <Folder Include="Interfaces\ConnectModules\" />
   </ItemGroup>
