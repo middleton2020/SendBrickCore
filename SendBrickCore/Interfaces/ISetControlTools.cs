@@ -1,5 +1,4 @@
-﻿using CM.SendBrick.Interfaces.Tools;
-using CM.SendBrickCore.Interfaces.Messages;
+﻿using CM.SendBrickCore.Interfaces.Messages;
 using CM.SendBrickCore.Interfaces.Tools;
 
 namespace CM.SendBrickCore.Interfaces
