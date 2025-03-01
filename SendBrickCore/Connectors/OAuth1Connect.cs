@@ -1,14 +1,8 @@
-﻿using CM.SendBrick.Interfaces.Tools;
-using CM.SendBrickCore.Interfaces;
+﻿using CM.SendBrickCore.Interfaces;
 using CM.SendBrickCore.Interfaces.Connectors;
 using CM.SendBrickCore.Interfaces.Tools;
 using CM.SendBrickCore.Tools;
 using CM.SendbrickShared.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 // For using oAuth.
 using RestSharp;    // To install this. In Command Line, navigate to the project directory. Then run 'dotnet add package RestSharp' or use NuGet.
 using RestSharp.Authenticators;

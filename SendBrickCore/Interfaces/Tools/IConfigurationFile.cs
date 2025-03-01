@@ -1,4 +1,4 @@
-﻿namespace CM.SendBrick.Interfaces.Tools
+﻿namespace CM.SendBrickCore.Interfaces.Tools
 {
     public interface IConfigurationFile
     {
