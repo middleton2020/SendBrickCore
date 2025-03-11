@@ -1,6 +1,6 @@
 ﻿using CM.SendBrickCore.FunctionModules;
 using CM.SendbrickShared.Enums;
-using SendBrickCore.Interfaces.FunctionModules;
+using CM.SendBrickCore.Interfaces.FunctionModules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
