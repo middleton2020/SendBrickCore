@@ -1,6 +1,6 @@
 ﻿using CM.SendbrickShared.Enums;
 
-namespace SendBrickCore.Interfaces.FunctionModules
+namespace CM.SendBrickCore.Interfaces.FunctionModules
 {
     /// <summary>
     /// Stores the data of each order
