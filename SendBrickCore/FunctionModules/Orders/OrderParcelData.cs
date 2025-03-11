@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CM.SendBrickCore.Interfaces.FunctionModules;
 
-namespace SendBrickCore.FunctionModules.Orders
+namespace CM.SendBrickCore.FunctionModules.Orders
 {
     public class OrderParcelData : IOrderParcelData
     {

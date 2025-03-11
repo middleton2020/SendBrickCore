@@ -1,13 +1,7 @@
-﻿using CM.SendBrickCore.FunctionModules;
+﻿using CM.SendBrickCore.Interfaces.FunctionModules;
 using CM.SendbrickShared.Enums;
-using CM.SendBrickCore.Interfaces.FunctionModules;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SendBrickCore.FunctionModules.Orders
+namespace CM.SendBrickCore.FunctionModules.Orders
 {
     public class OrderData : IOrderData
     {
