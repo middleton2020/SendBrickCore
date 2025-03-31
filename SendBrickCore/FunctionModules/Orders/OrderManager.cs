@@ -28,7 +28,7 @@ namespace CM.SendBrickCore.FunctionModules.Orders
             _ordersList.Add(_sequence, inpOrderData);
 
             // Add to the dictionary too.
-            string indexValue = inpOrderData.SourceSystem.ToString() + inpOrderData.SupplierId;
+            string indexValue = inpOrderData.SourceSystem.ToString() + inpOrderData.CustomsInvoiceNumber;
             _orderIdIndex.Add(indexValue, _sequence);
 
             return _sequence;
