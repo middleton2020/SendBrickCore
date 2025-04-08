@@ -1,13 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CM.SendBrickCore.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CM.SendBrick.Tools;
-using CM.SendBrickCore.Tools;
+﻿using CM.SendBrick.Tools;
 using CM.SendBrickCore.Messages;
+using CM.SendBrickCore.Tools;
 
 namespace CM.SendBrickCore.Core.Tests
 {
@@ -18,7 +11,7 @@ namespace CM.SendBrickCore.Core.Tests
         public void SetControlToolsTest()
         {
             // Create comparison objects.
-            ConfigurationFile configFile= new ConfigurationFile();
+            ConfigurationFile configFile = new ConfigurationFile();
             ConnectionParameters connectParams = new ConnectionParameters(configFile);
             Errors errors = new Errors();
             Logging logging = new Logging();
@@ -29,9 +22,9 @@ namespace CM.SendBrickCore.Core.Tests
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
-            Assert.AreEqual(errors.GetType(),controler.GetErrorHandler().GetType());
-            Assert.AreEqual(logging.GetType(),controler.GetLogHandler().GetType());
-            Assert.AreEqual(messages.GetType(),controler.GetMessageHandler().GetType());
+            Assert.AreEqual(errors.GetType(), controler.GetErrorHandler().GetType());
+            Assert.AreEqual(logging.GetType(), controler.GetLogHandler().GetType());
+            Assert.AreEqual(messages.GetType(), controler.GetMessageHandler().GetType());
         }
 
         [TestMethod()]
@@ -65,7 +58,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(configFile,connectParams);
+            SetControlTools controler = new SetControlTools(configFile, connectParams);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
             Assert.AreSame(connectParams, controler.GetConnectionParamsController());
@@ -85,7 +78,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(configFile,connectParams,errors);
+            SetControlTools controler = new SetControlTools(configFile, connectParams, errors);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
             Assert.AreSame(connectParams, controler.GetConnectionParamsController());
@@ -105,7 +98,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(configFile,connectParams,errors,logging);
+            SetControlTools controler = new SetControlTools(configFile, connectParams, errors, logging);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
             Assert.AreSame(connectParams, controler.GetConnectionParamsController());
@@ -125,7 +118,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(configFile,connectParams,errors,logging,messages);
+            SetControlTools controler = new SetControlTools(configFile, connectParams, errors, logging, messages);
 
             Assert.AreSame(configFile, controler.GetConfigFile());
             Assert.AreSame(connectParams, controler.GetConnectionParamsController());
@@ -145,7 +138,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(errors,logging,messages);
+            SetControlTools controler = new SetControlTools(errors, logging, messages);
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
@@ -165,7 +158,7 @@ namespace CM.SendBrickCore.Core.Tests
             MessageData messages = new MessageData();
 
             // Create our test object.
-            SetControlTools controler = new SetControlTools(errors,logging);
+            SetControlTools controler = new SetControlTools(errors, logging);
 
             Assert.AreEqual(configFile.GetType(), controler.GetConfigFile().GetType());
             Assert.AreEqual(connectParams.GetType(), controler.GetConnectionParamsController().GetType());
