@@ -1,4 +1,4 @@
-﻿using CM.SendBrick.Interfaces.Tools;
+﻿using CM.SendBrickCore.Interfaces.Tools;
 
 namespace CM.SendBrick.Tools
 {
