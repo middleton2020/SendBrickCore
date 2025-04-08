@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SendBrickCore\SendBrickCore.csproj" />
+    <ProjectReference Include="..\SendbrickShared\SendbrickShared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

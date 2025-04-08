@@ -7,16 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ConnectModules\BrickLink\" />
     <Folder Include="ConnectModules\BrickOwl\" />
     <Folder Include="ConnectModules\RoyalMail\" />
-    <Folder Include="Connectors\" />
     <Folder Include="Enums\" />
-    <Folder Include="FunctionModules\Inventory\" />
-    <Folder Include="FunctionModules\Orders\" />
-    <Folder Include="Interfaces\FunctionModules\" />
-    <Folder Include="Interfaces\Connectors\" />
     <Folder Include="Interfaces\ConnectModules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\JsonTools\JsonTools\JsonTools.csproj" />
+    <ProjectReference Include="..\SendbrickShared\SendbrickShared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="112.1.0" />
   </ItemGroup>
 
 </Project>
