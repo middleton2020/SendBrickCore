@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.ConnectModules.BrickLink
+namespace CM.SendBrickCore.ConnectModules.BrickLink
 {
     // Was BrickLinkOrderReader
-    internal class BrickLinkOrderDataExtract
+    public class BrickLinkOrderDataExtract
     {
     }
 }

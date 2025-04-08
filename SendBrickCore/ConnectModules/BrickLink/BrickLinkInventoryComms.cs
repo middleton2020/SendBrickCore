@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SendBrickCore.ConnectModules.BrickLink
+namespace CM.SendBrickCore.ConnectModules.BrickLink
 {
-    internal class BrickLinkInventoryComms
+    public class BrickLinkInventoryComms
     {
     }
 }
