@@ -1,4 +1,5 @@
 ﻿using CM.SendBrick.Tools;
+using CM.SendBrickCore.Interfaces;
 using CM.SendBrickCore.Interfaces.Messages;
 using CM.SendBrickCore.Interfaces.Tools;
 using CM.SendBrickCore.Messages;
@@ -9,7 +10,7 @@ namespace CM.SendBrickCore.Core
     /// <summary>
     /// Get configuration details.
     /// </summary>
-    public class SetControlTools
+    public class SetControlTools : ISetControlTools
     {
         // This is the top level of our system, which sets up the DependencyInversions to be used by the other classes.
         #region VariableDefinitions
