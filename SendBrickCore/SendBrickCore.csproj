@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ConnectModules\BrickOwl\" />
     <Folder Include="ConnectModules\RoyalMail\" />
     <Folder Include="Enums\" />
     <Folder Include="Interfaces\ConnectModules\" />
