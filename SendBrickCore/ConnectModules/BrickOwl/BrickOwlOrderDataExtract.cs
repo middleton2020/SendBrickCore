@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CM.SendBrickCore.ConnectModules.BrickOwl
 {
-    // Was BrickLinkOrderReader
-    internal class BrickOwlOrderDataExtract
+    /// <summary>
+    /// Code to unpack BrickOwl Order data to the TransferOrderData Class.
+    /// </summary>
+    public class BrickOwlOrderDataExtract
     {
     }
 }
