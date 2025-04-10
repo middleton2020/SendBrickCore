@@ -5,11 +5,13 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendBrickCore", "SendBrickCore\SendBrickCore.csproj", "{FEE19A3A-5111-4103-A787-1740F23B8145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendbrickShared", "SendbrickShared\SendbrickShared.csproj", "{3F9B2EA3-2D24-45ED-944A-ED0E19102720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendbrickShared", "SendbrickShared\SendbrickShared.csproj", "{3F9B2EA3-2D24-45ED-944A-ED0E19102720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendBrickCoreTests", "SendBrickCoreTests\SendBrickCoreTests.csproj", "{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendBrickCoreTests", "SendBrickCoreTests\SendBrickCoreTests.csproj", "{91B8FC4F-CA77-4A77-804C-FBFBEE1AD1FB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonTools", "..\JsonTools\JsonTools\JsonTools.csproj", "{AAA7204D-4738-49C5-AD42-E084AD398ED6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReformatJson", "..\ReformatJson\ReformatJson\ReformatJson.csproj", "{EB3E7A93-E76B-449B-B363-FE5E8AAF4A22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AAA7204D-4738-49C5-AD42-E084AD398ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA7204D-4738-49C5-AD42-E084AD398ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA7204D-4738-49C5-AD42-E084AD398ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3E7A93-E76B-449B-B363-FE5E8AAF4A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3E7A93-E76B-449B-B363-FE5E8AAF4A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3E7A93-E76B-449B-B363-FE5E8AAF4A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3E7A93-E76B-449B-B363-FE5E8AAF4A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
